@@ -14,7 +14,7 @@ if st.button("Check Message"):
         st.warning("Please enter a message.")
     else:
         try:
-            res = requests.post("http://127.0.0.1:5000/predict", json={"message": msg})
+            res = requests.post("https://spam-detector-fgop.onrender.com/predict", json={"message": msg})
             data = res.json()
             st.subheader(f"Prediction: {data['prediction']}")
             st.write(f"Confidence: {data['confidence']:.2f}")
