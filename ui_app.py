@@ -4,7 +4,7 @@ import requests
 
 st.set_page_config(page_title="Spam Message Detector")
 
-st.title("📩 Spam Message & Link Detector")
+st.title("📩 Message Detector")
 st.write("Paste your message or SMS below 👇")
 
 msg = st.text_area("Message:", height=200)
